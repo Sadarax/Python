@@ -1,5 +1,4 @@
 # NguyenU
-
 def find_max(nums):
     max = nums[0]
     for x in nums:
@@ -8,7 +7,15 @@ def find_max(nums):
     print(max)
 
 def main():
-  find_max([2, 4, 9, 7, 19, 94, 5])
+    start = 0
+    list1 = []
+    while start < 5:
+        numbers = int(input("Enter numbers: "))
+        start += 1
+        list1.insert(0,numbers)
+    find_max(list1)
+    #print(list1)
+        
 
-if __name__ == '__main__':
-  main()
+
+main()
